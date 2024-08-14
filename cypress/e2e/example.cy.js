@@ -10,5 +10,6 @@ describe('My First Test', () => {
     cy.get('[href="/"]').click();
     cy.get('.router-link-active').click();
     /* ==== End Cypress Studio ==== */
+    
   })
 })

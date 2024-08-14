@@ -13,6 +13,8 @@ export default defineConfig({
     devServer: {
       framework: 'vue',
       bundler: 'vite'
-    }
+    },
+    supportFile: 'cypress/support/component.js'
+
   }
 })
