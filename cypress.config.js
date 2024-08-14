@@ -5,7 +5,12 @@ export default defineConfig({
     experimentalStudio: true,
     projectId: "45a4qx",
     specPattern: 'cypress/e2e/**/*.{cy,spec}.{js,jsx,ts,tsx}',
-    baseUrl: 'http://localhost:5173'
+    baseUrl: 'http://localhost:5173',
+    record: true,
+    retries: {
+      runMode: 2, // Number of retries during CI runs
+      openMode: 0, // Number of retries during `cypress open`
+    },
   },
   component: {
     projectId: "45a4qx",
