@@ -2,10 +2,10 @@ import { defineConfig } from 'cypress'
 
 export default defineConfig({
   record: true,
-    retries: {
-      runMode: 2, // Number of retries during CI runs
-      openMode: 0, // Number of retries during `cypress open`
-    },
+    // retries: {
+    //   runMode: 2, // Number of retries during CI runs
+    //   openMode: 0, // Number of retries during `cypress open`
+    // },
   e2e: {
     experimentalStudio: true,
     projectId: "45a4qx",
